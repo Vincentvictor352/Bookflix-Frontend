@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Nav() {
@@ -14,10 +15,11 @@ function Nav() {
             className="w-32 h-32"
           />
         </div>
-
-        <button className="flex items-center bg-[#e60914] px-5 py-1.5 cursor-pointer hover:bg-red-500 text-white rounded-[5px] text-sm">
-          Signup
-        </button>
+        <Link href="/login">
+          <button className="flex items-center bg-[#e60914] px-5 py-1.5 cursor-pointer hover:bg-red-500 text-white rounded-[5px] text-sm">
+            Signup
+          </button>
+        </Link>
       </nav>
     </section>
   );

@@ -6,10 +6,11 @@ import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
   email: string;
+  username: string;
   password: string;
 };
 
-export default function PageLogin() {
+export default function PageSignup() {
   const {
     register,
     handleSubmit,
@@ -24,15 +25,15 @@ export default function PageLogin() {
   const [showHelp, setShowHelp] = useState(false);
 
   return (
-    <section className="flex md:px-0 px-4 justify-center mb-12 items-center text-white">
+    <section className="flex  md:px-0 px-4 justify-center mb-12 items-center text-white">
       <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-md">
         <h1 className="text-4xl tracking-tight font-bold">
-          Enter your info to sign in
+          Create your account
         </h1>
         <p className="text-[#c2b7ac] text-sm mt-2">
-          Or get started with a new account.{" "}
-          <Link href="/signup" className="text-xs text-blue-600">
-            Signup
+          Already have an account?{" "}
+          <Link href="/login" className="text-xs text-blue-600">
+            Login
           </Link>
         </p>
 
@@ -42,7 +43,7 @@ export default function PageLogin() {
             <input
               type="email"
               {...register("email", {
-                required: "Email or Username is required",
+                required: "Email is required",
               })}
               id="email"
               className={`peer w-full placeholder:text-xs border ${
@@ -61,6 +62,34 @@ export default function PageLogin() {
               <p className="text-red-500 flex items-center text-xs mt-2 gap-x-2">
                 <CircleX className="text-red-500" size={14} />
                 {errors.email.message}
+              </p>
+            )}
+          </div>
+
+          {/* Username */}
+          <div className="relative mt-8">
+            <input
+              type="text"
+              {...register("username", {
+                required: "Username is required",
+              })}
+              id="username"
+              className={`peer w-full placeholder:text-xs border ${
+                errors.username
+                  ? "border-red-700 focus:border-red-800"
+                  : "border-gray-500 focus:border-white"
+              } px-4 rounded focus:border-2 bg-transparent py-4 text-sm focus:outline-2`}
+              placeholder=" "
+            />
+            <label
+              htmlFor="username"
+              className="absolute left-0 px-4 text-gray-400 text-sm transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-focus:-top-1 peer-focus:text-xs peer-focus:text-gray-500">
+              Username
+            </label>
+            {errors.username && (
+              <p className="text-red-500 flex items-center text-xs mt-2 gap-x-2">
+                <CircleX className="text-red-500" size={14} />
+                {errors.username.message}
               </p>
             )}
           </div>
@@ -89,7 +118,12 @@ export default function PageLogin() {
               className="absolute left-0 px-4 text-gray-400 text-sm transition-all duration-200 peer-placeholder-shown:top-4 peer-placeholder-shown:text-xs peer-focus:-top-1 peer-focus:text-xs peer-focus:text-gray-500">
               Password
             </label>
-
+            {errors.password && (
+              <p className="text-red-500 flex items-center text-xs mt-2 gap-x-2">
+                <CircleX className="text-red-500" size={14} />
+                {errors.password.message}
+              </p>
+            )}
             {/* Eye toggle */}
             <button
               type="button"
@@ -98,20 +132,15 @@ export default function PageLogin() {
               {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
             </button>
 
-            {errors.password && (
-              <p className="text-red-500 flex items-center text-xs mt-2 gap-x-2">
-                <CircleX className="text-red-500" size={14} />
-                {errors.password.message}
-              </p>
-            )}
+            {/* Error message */}
           </div>
         </article>
 
-        {/* Login Button */}
+        {/* Signup button */}
         <button
           type="submit"
           className="bg-red-600 text-white w-full mt-4 py-3 rounded hover:bg-red-700 transition">
-          Login
+          Sign Up
         </button>
 
         {/* Help dropdown */}
@@ -120,7 +149,7 @@ export default function PageLogin() {
             type="button"
             onClick={() => setShowHelp(!showHelp)}
             className="flex items-center gap-x-2">
-            <p>Get Help</p>
+            <p>Need Help?</p>
             <ChevronDown
               className={`transition-transform duration-300 ${
                 showHelp ? "rotate-180" : ""
@@ -133,8 +162,10 @@ export default function PageLogin() {
             className={`overflow-hidden transition-all duration-300 ${
               showHelp ? "max-h-20 mt-2" : "max-h-0"
             }`}>
-            <Link href="#" className="text-blue-500 block mt-2 hover:underline">
-              Forgot password?
+            <Link
+              href="/help"
+              className="text-blue-500 block mt-2 hover:underline">
+              Contact Support
             </Link>
           </div>
         </div>

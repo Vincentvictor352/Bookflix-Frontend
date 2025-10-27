@@ -1,26 +1,18 @@
 import React from "react";
-import HerosectionWaitlist from "./HerosectionWaitlist";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import Link from "next/link";
 
-function Footer() {
+function AuthFooter() {
   return (
-    <footer className="bg-[#000000] text-white py-20 px-6 md:px-20 border-t border-white/10">
-      {/* Top CTA Section */}
-      <div className="text-center max-w-2xl mx-auto mb-14">
-        <h1 className="text-2xl md:text-3xl font-bold mb-6">
-          Ready to Read? Enter your email to create or restart your membership.
-        </h1>
-        <HerosectionWaitlist />
-      </div>
-
+    <footer className="bg-[#171717]  text-white py-20 px-6 md:px-20 border-t border-white/10">
       {/* Middle Footer Links */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-sm text-gray-400 mb-12">
         <div>
-          <h3 className="text-white font-semibold mb-3">BookFlix</h3>
+          <Link href="/">
+            <h3 className="text-white font-semibold mb-3">BookFlix</h3>
+          </Link>
           <ul className="space-y-2">
-            <li>About Us</li>
             <li>Contact</li>
-            <li>FAQs</li>
           </ul>
         </div>
 
@@ -56,4 +48,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default AuthFooter;
