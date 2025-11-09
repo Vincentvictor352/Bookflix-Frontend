@@ -8,14 +8,14 @@ function About() {
         <Back />
         <h1 className="text-4xl font-bold mb-6">About Bookflix</h1>
 
-        <p className="mb-6 text-gray-700">
+        <p className="mb-6 text-gray-700 text-sm">
           Bookflix is a streaming platform dedicated to delivering an immersive
           and personalized entertainment experience to readers and book lovers
           alike. We combine curated video content, interactive storytelling, and
           original adaptations to bring your favorite stories to life.
         </p>
 
-        <p className="mb-6 text-gray-700">
+        <p className="mb-6 text-gray-700  text-sm">
           Our mission is to make literature accessible, engaging, and
           entertaining through a digital-first experience. Whether you want to
           explore author interviews, book adaptations, or exclusive Bookflix
@@ -23,14 +23,14 @@ function About() {
           love.
         </p>
 
-        <p className="mb-6 text-gray-700">
+        <p className="mb-6 text-gray-700  text-sm">
           Bookflix is available on multiple devices, including smartphones,
           tablets, smart TVs, and computers. With personalized recommendations,
           multiple profiles, and offline downloads, we ensure that your reading
           and viewing experience is seamless and convenient.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-10">
+        <div className="grid md:grid-cols-2 gap-8 mt-10  text-sm">
           <div className="bg-white p-6 rounded-2xl  border border-gray-400 ">
             <h2 className="text-2xl font-semibold mb-3">Our Mission</h2>
             <p className="text-gray-700">
@@ -39,7 +39,7 @@ function About() {
               and interactive content.
             </p>
           </div>
-          <div className="bg-white p-6 rounded-2xl border border-gray-400">
+          <div className="bg-white p-6 rounded-2xl border border-gray-400  text-sm">
             <h2 className="text-2xl font-semibold mb-3">Our Vision</h2>
             <p className="text-gray-700">
               To become the leading platform for book-inspired entertainment
@@ -49,7 +49,7 @@ function About() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Our Values</h2>
           <ul className="space-y-2 text-gray-700">
             <li>

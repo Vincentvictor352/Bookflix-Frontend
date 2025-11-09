@@ -8,14 +8,14 @@ function Privacy() {
         <Back />
         <h1 className="text-4xl font-bold mb-6 ">Privacy Policy</h1>
 
-        <p className="mb-6 text-gray-700">
+        <p className="mb-6 text-gray-700  text-sm">
           This Privacy Statement explains how we collect, use, and disclose your
           personal information when you use the "Bookflix service" or anywhere
           we display or reference this Privacy Statement. It also explains your
           privacy rights and how to exercise them.
         </p>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm ">
           <h2 className="text-2xl font-semibold mb-4">Contacting Us</h2>
           <p className="text-gray-700 mb-2">
             For questions about this Privacy Statement, our use of your personal
@@ -28,7 +28,7 @@ function Privacy() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">
             Information We Collect
           </h2>
@@ -54,7 +54,7 @@ function Privacy() {
           </ul>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">
             How We Use Your Information
           </h2>
@@ -74,7 +74,7 @@ function Privacy() {
           </ul>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Your Privacy Rights</h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li>Access, correct, or delete your personal information</li>
@@ -84,7 +84,7 @@ function Privacy() {
           </ul>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">
             Cookies and Similar Technologies
           </h2>
@@ -95,7 +95,7 @@ function Privacy() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Security & Retention</h2>
           <p className="text-gray-700">
             We protect your personal information with appropriate security
@@ -104,7 +104,7 @@ function Privacy() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Minors</h2>
           <p className="text-gray-700">
             The Bookflix service is intended for users 18 and above. Minors may
@@ -112,7 +112,7 @@ function Privacy() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">
             Changes to This Policy
           </h2>

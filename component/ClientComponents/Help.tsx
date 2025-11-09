@@ -116,7 +116,7 @@ function Help() {
 
         {helpSections.map((section, sectionIndex) => (
           <section key={sectionIndex} className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4 text-left md:text-center">
+            <h2 className=" text-2xl font-semibold mb-4 text-left md:text-center">
               {section.title}
             </h2>
             <ul className="text-gray-700">
@@ -135,7 +135,7 @@ function Help() {
                       )}
                     </button>
                     {openItem[key] && (
-                      <p className="mt-1 text-gray-600 px-4">
+                      <p className="mt-1  text-xs text-gray-600 px-4">
                         {item.description}
                       </p>
                     )}

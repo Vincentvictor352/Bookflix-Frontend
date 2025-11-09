@@ -8,14 +8,14 @@ function Teams() {
         <Back />
         <h1 className="text-4xl font-bold mb-6 ">Bookflix Terms of Use</h1>
 
-        <p className="mb-6 text-gray-700">
+        <p className="mb-6 text-gray-700  text-sm">
           Bookflix provides a personalized subscription service that allows
           members to access entertainment content (“Bookflix content”) over the
           Internet on certain Internet-connected TVs, computers, and other
           devices ("Bookflix ready devices").
         </p>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Membership</h2>
           <p className="text-gray-700 mb-2">
             Your Bookflix membership will continue until terminated. To use the
@@ -28,7 +28,7 @@ function Teams() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">
             Billing and Cancellation
           </h2>
@@ -44,7 +44,7 @@ function Teams() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Bookflix Service</h2>
           <p className="text-gray-700 mb-2">
             Bookflix content is for personal, non-commercial use and may not be
@@ -63,7 +63,7 @@ function Teams() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Account and Passwords</h2>
           <p className="text-gray-700 mb-2">
             You are responsible for activity that occurs through your Bookflix
@@ -74,7 +74,7 @@ function Teams() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">
             Warranties and Liability
           </h2>
@@ -85,7 +85,7 @@ function Teams() {
           </p>
         </section>
 
-        <section className="mb-8">
+        <section className="mb-8  text-sm">
           <h2 className="text-2xl font-semibold mb-4">Miscellaneous</h2>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
             <li>

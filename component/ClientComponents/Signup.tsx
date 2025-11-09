@@ -25,7 +25,7 @@ export default function Signup() {
   const [showHelp, setShowHelp] = useState(false);
 
   return (
-    <section className=" text-white w-full max-w-md">
+    <section className="  text-white w-full  md:max-w-md ">
       <form onSubmit={handleSubmit(onSubmit)} className="">
         <h1 className="text-4xl tracking-tight font-bold">
           Create your account
