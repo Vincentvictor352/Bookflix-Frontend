@@ -61,7 +61,7 @@ function Contact() {
                 <Instagram size={15} /> Instagram:{" "}
                 <a
                   href="https://instagram.com/yourhandle"
-                  className="text-pink-500 hover:underline">
+                  className="text-blue-500 hover:underline">
                   @yourhandle
                 </a>
               </li>
@@ -71,7 +71,7 @@ function Contact() {
           {/* Right side form */}
           <ContactForm />
         </main>
-        <p className="mt-10 text-sm text-gray-600 pb-10 leading-relaxed">
+        <p className="mt-10 text-sm text-gray-600  leading-relaxed">
           You can also connect with us on our social media platforms for quick
           replies and real-time updates. We share product announcements, feature
           releases, community highlights, and behind-the-scenes insights into
