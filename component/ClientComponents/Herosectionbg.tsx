@@ -3,18 +3,18 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { ChevronRight } from "lucide-react";
+
 import HerosectionWaitlist from "./HerosectionWaitlist";
 
 function Herosectionbg() {
   const arrayofbook = [
-    "/dummy/surja-sen-das-raj-ViMrMawjj7s-unsplash.jpg",
-    "/dummy/thought-catalog-V5BGaJ0VaLU-unsplash.jpg",
+    "/dummy/hardcover-book-mockup-display-for-publishing-designs-and-creative-visual-presentation-use-0566.jpg",
+    "/dummy/hardcover-book-mockup-display-for-publishing-designs-and-creative-visual-presentation-use-0566.jpg",
     "/dummy/tim-alex-1i-P178kxHQ-unsplash.jpg",
     "/dummy/varad-parulekar-Gls5DB9lk6s-unsplash.jpg",
     "/dummy/thought-catalog-V5BGaJ0VaLU-unsplash.jpg",
     "/dummy/tim-alex-1i-P178kxHQ-unsplash.jpg",
-    "/dummy/thought-catalog-V5BGaJ0VaLU-unsplash.jpg",
+    "/dummy/hardcover-book-mockup-display-for-publishing-designs-and-creative-visual-presentation-use-0566.jpg",
   ];
 
   // Motion variants for up and down scrolling

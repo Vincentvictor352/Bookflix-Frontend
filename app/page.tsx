@@ -1,4 +1,3 @@
-import Footer from "@/component/ClientComponents/Footer";
 import FQA from "@/component/ClientComponents/FQA";
 import Herosectionbg from "@/component/ClientComponents/Herosectionbg";
 import Trending from "@/component/ClientComponents/Trending";
@@ -11,7 +10,6 @@ export default function Home() {
       <Trending />
       <FQA />
       <Reasons />
-      <Footer />
     </>
   );
 }

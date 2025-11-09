@@ -2,27 +2,43 @@ import React from "react";
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
 
+const footerLinks = {
+  bookflix: [
+    { name: "About Us", link: "/about" },
+    { name: "Contact", link: "/contact" },
+  ],
+  support: [
+    { name: "Help Center", link: "/help" },
+    { name: "Account", link: "/account" },
+    { name: "Privacy Policy", link: "/privacy" },
+    { name: "Terms of Use", link: "/teams" },
+  ],
+};
+
 function AuthFooter() {
   return (
-    <footer className="bg-[#171717]  text-white py-20 px-6 md:px-20 border-t border-white/10">
+    <footer className="bg-[#171717] text-white py-20 px-6 md:px-20 border-t border-white/10">
       {/* Middle Footer Links */}
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 text-sm text-gray-400 mb-12">
         <div>
-          <Link href="/">
-            <h3 className="text-white font-semibold mb-3">BookFlix</h3>
-          </Link>
+          <h3 className="text-white font-semibold mb-3">BookFlix</h3>
           <ul className="space-y-2">
-            <li>Contact</li>
+            {footerLinks.bookflix.map((item, idx) => (
+              <li key={idx} className="cursor-pointer">
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
           <h3 className="text-white font-semibold mb-3">Support</h3>
           <ul className="space-y-2">
-            <li>Help Center</li>
-            <li>Account</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Use</li>
+            {footerLinks.support.map((item, idx) => (
+              <li key={idx} className="cursor-pointer">
+                <Link href={item.link}>{item.name}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 

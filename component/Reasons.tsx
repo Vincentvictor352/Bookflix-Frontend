@@ -32,7 +32,7 @@ function Reasons() {
   return (
     <section className="bg-[#000000] text-white  py-36 px-6 md:px-20  -mt-12">
       <div className=" mb-12">
-        <h2 className="text-3xl tracking-tight font-bold tracking-wide">
+        <h2 className="text-3xl tracking-tight font-bold ">
           More Reasons to Join BookFlix?
         </h2>
         {/* <p className="text-gray-400 mt-2">

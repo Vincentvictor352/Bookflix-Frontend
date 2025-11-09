@@ -9,7 +9,7 @@ export default function AuthLayout({
   return (
     <div className="min-h-screen w-full bg-linear-to-b from-[#330e10] to-black flex flex-col">
       <AuthNav />
-      <main className="flex-1 flex justify-center items-center px-4 py-12">
+      <main className="flex-1 flex justify-center items-center  py-12">
         {children}
       </main>
       <AuthFooter />

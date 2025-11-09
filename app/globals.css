@@ -8,44 +8,34 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-input:-webkit-autofill,
+/* input:-webkit-autofill,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:hover {
   -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
-  -webkit-text-fill-color: white !important;
+  -webkit-text-fill-color: none !important;
   transition: background-color 9999s ease-in-out 0s;
-}
+} */
 body {
   font-family: "Geist";
 }
-@keyframes marquee-up {
+/* */
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: rotate(0deg);
   }
   100% {
-    transform: translate3d(0, -50%, 0);
+    transform: rotate(360deg);
   }
-}
-
-@keyframes marquee-down {
-  0% {
-    transform: translate3d(0, -50%, 0);
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.animate-marquee-up {
-  animation: marquee-up 60s linear infinite;
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-}
-
-.animate-marquee-down {
-  animation: marquee-down 60s linear infinite;
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translateZ(0);
 }

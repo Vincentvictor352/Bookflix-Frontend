@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react"; // optional icon
-
+import { Link, Element } from "react-scroll";
 function FQA() {
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -38,7 +38,9 @@ function FQA() {
   };
 
   return (
-    <section className="bg-[#000000] text-white  py-36 px-6 md:px-20  -mt-16">
+    <Element
+      name="FAQ"
+      className="bg-[#000000] text-white  py-36 px-6 md:px-20  -mt-16">
       <h2 className="text-3xl font-bold tracking-tight mb-6">
         Frequently Asked Questions
       </h2>
@@ -62,7 +64,7 @@ function FQA() {
           </div>
         ))}
       </div>
-    </section>
+    </Element>
   );
 }
 

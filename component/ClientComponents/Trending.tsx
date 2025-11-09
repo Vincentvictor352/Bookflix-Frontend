@@ -68,7 +68,7 @@ export default function Trending() {
   return (
     <section className="bg-[#000000] text-white py-16 px-6 md:px-20 border-t-4 border-pink-600 rounded-t-[60px] -mt-16">
       <div className="mb-10 ">
-        <h1 className="text-3xl font-bold tracking-wide tracking-tight">Trending Books</h1>
+        <h1 className="text-3xl font-bold  tracking-tight">Trending Books</h1>
         <p className="text-gray-400 text-sm mt-2">
           Discover the most popular books everyone is reading now
         </p>
